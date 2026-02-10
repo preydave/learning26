@@ -20,6 +20,7 @@ export const Navbar = () => {
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
               <Link className="nav-link" to="/netflixhome">Netflix Home</Link>
+              
             </li>
 
             <li className="nav-item">
@@ -37,6 +38,32 @@ export const Navbar = () => {
             <li className="nav-item">
               <Link className="nav-link" to="/ipl">IPL</Link>
             </li>
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/FunctionDemo1">
+                funnction1
+              </Link>
+            </li>
+
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/usestatedemo">
+                usestatedemo
+              </Link>
+            </li>
+
+             <li className="nav-item">
+              <Link className="nav-link" to="/employees">
+              Employee
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/OnChange">
+              OnChange
+              </Link>
+            </li>
+
           </ul>
         </div>
       </nav>

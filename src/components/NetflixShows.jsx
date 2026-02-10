@@ -15,7 +15,7 @@ export const NetflixShows = () => {
       {
         movies.map((movie)=>{
           //return <li>{movie.movieName}</li>
-          return <li>
+          return <li key={movie.movieId}>
             {/* <Link to="/watch/{movie.movieName}">{movie.movieName}</Link> */}
             <Link to={`/watch/${movie.movieName}`}>{movie.movieName}</Link>
           </li>
