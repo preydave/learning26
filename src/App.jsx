@@ -22,10 +22,11 @@ import { HomeComponent } from './components/HomeComponent.jsx';
 import { UseStateDemo } from './components/UseStateDemo.jsx';
 import { FunctionDemo1 } from './components/FunctionDemo1.jsx'; // ✅ ADD THIS
 import { Employees } from './components/Employees.jsx';
-import OnChange from './components/OnChange.jsx';
+import OnChange from './components/input/OnChange.jsx';
 import EmployeeTable from './components/EmployeeTable.jsx';
 import ProductTable from './components/ProductTable.jsx';
 import StudentTable from './components/StudentTable.jsx';
+
 
 function App() {
   return (
@@ -47,10 +48,12 @@ function App() {
         <Route path="/UseStateDemo" element={<UseStateDemo />} />
         <Route path="/Employees" element={<Employees/>}></Route>
         <Route path='/OnChange' element={<OnChange/>}></Route>
+        
         <Route path="/*" element={<ErrorNotFound />} />
       </Routes>
     </div>
   );
 }
+
 
 export default App;
