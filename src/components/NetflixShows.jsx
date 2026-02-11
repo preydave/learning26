@@ -12,15 +12,19 @@ export const NetflixShows = () => {
   return (
     <div style={{ textAlign: "center" }}>
       <h1>NetflixShows</h1>
-      {
-        movies.map((movie)=>{
-          //return <li>{movie.movieName}</li>
-          return <li key={movie.movieId}>
-            {/* <Link to="/watch/{movie.movieName}">{movie.movieName}</Link> */}
-            <Link to={`/watch/${movie.movieName}`}>{movie.movieName}</Link>
-          </li>
-        })
-      }
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px", justifyItems: "center" }}>
+        {
+          movies.map((movie)=>{
+            return (
+              <div key={movie.movieId} style={{ border: "1px solid #ccc", padding: "10px", borderRadius: "5px", width: "200px" }}>
+                <Link to={`/watch/${movie.movieName}`} style={{ textDecoration: "none", color: "black" }}>
+                  {movie.movieName}
+                </Link>
+              </div>
+            );
+          })
+        }
+      </div>
     </div>
   );
 };
