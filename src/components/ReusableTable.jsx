@@ -1,6 +1,10 @@
 import React from 'react';
 
 const ReusableTable = ({ columns, data }) => {
+  if (!Array.isArray(data)) {
+    return <div>No data available</div>;
+  }
+
   return (
     <table className="table">
       <thead>

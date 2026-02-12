@@ -1,5 +1,5 @@
-# TODO List for Implementing SubEmployeeList Concept in Table Components
+# TODO for Adding Forms Link to Navbar
 
-- [x] Update StudentTable.jsx to accept props, log props, and use props.columns and props.data
-- [x] Update ProductTable.jsx to accept props, log props, and use props.columns and props.data
-- [x] Update EmployeeTable.jsx to accept props, log props, and use props.columns and props.data
+- [ ] Add a new nav-item in Navbar.jsx for "Forms" linking to "/formdemo"
+- [ ] Ensure the link is placed appropriately in the navbar menu
+- [ ] Test the link by clicking it in the app to verify redirection to FormDemo1

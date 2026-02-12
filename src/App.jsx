@@ -22,11 +22,16 @@ import { HomeComponent } from './components/HomeComponent.jsx';
 import { UseStateDemo } from './components/UseStateDemo.jsx';
 import { FunctionDemo1 } from './components/FunctionDemo1.jsx'; // ✅ ADD THIS
 import { Employees } from './components/Employees.jsx';
-import OnChange from './components/input/OnChange.jsx';
 import EmployeeTable from './components/EmployeeTable.jsx';
 import ProductTable from './components/ProductTable.jsx';
 import StudentTable from './components/StudentTable.jsx';
-
+import { InputDemo2 } from './components/input/InputDemo2.jsx';
+import { FormDemo1 } from './components/forms/FormDemo1.jsx';
+import CustInput from './components/CustInput.jsx';
+import StudentForm from "./components/forms/StudentForm";
+import { FormDemo2 } from './components/forms/FormDemo2.jsx';
+import { FormStudent } from './components/forms/Formstudent.jsx';
+import { Journalist } from './components/forms/Journalist.jsx';
 
 function App() {
   return (
@@ -47,8 +52,13 @@ function App() {
         <Route path="/FunctionDemo1" element={<FunctionDemo1 />} />
         <Route path="/UseStateDemo" element={<UseStateDemo />} />
         <Route path="/Employees" element={<Employees/>}></Route>
-        <Route path='/OnChange' element={<OnChange/>}></Route>
-        
+        <Route path="/formdemo" element={<FormDemo1/>}></Route>
+        <Route path="/InputDemo" element={<InputDemo2/>}></Route>
+        <Route path="/CustInput" element={<CustInput/>}></Route>
+        <Route path="/Studentform" element={<StudentForm/>}></Route>
+        <Route path="/FormDemo2" element={<FormDemo2/>}></Route>
+        <Route path="/FormStudent" element={<FormStudent/>}></Route>
+        <Route path="/Journalist" element={<Journalist/>}></Route>
         <Route path="/*" element={<ErrorNotFound />} />
       </Routes>
     </div>
