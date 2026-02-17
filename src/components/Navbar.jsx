@@ -103,6 +103,17 @@ export const Navbar = () => {
               </Link>
             </li>
 
+            <li className="nav-item">
+              <Link className="nav-link" to="/ValidationForm">
+              Validation
+              </Link>
+            </li>
+
+               <li className="nav-item">
+              <Link className="nav-link" to="/Apidemo">
+              Api
+              </Link>
+            </li>
 
           </ul>
         </div>

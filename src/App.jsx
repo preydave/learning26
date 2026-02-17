@@ -32,6 +32,9 @@ import StudentForm from "./components/forms/StudentForm";
 import { FormDemo2 } from './components/forms/FormDemo2.jsx';
 import { FormStudent } from './components/forms/Formstudent.jsx';
 import { Journalist } from './components/forms/Journalist.jsx';
+import { FormDemo3 } from './components/forms/FormDemo3.jsx';
+import { ValidationForm } from './components/forms/ValidationForm.jsx';
+import Apidemo from "./components/Apis/Apidemo";
 
 function App() {
   return (
@@ -59,6 +62,9 @@ function App() {
         <Route path="/FormDemo2" element={<FormDemo2/>}></Route>
         <Route path="/FormStudent" element={<FormStudent/>}></Route>
         <Route path="/Journalist" element={<Journalist/>}></Route>
+        <Route path="/formdemo3" element={<FormDemo3/>}></Route>
+        <Route path="/ValidationForm" element={<ValidationForm/>}></Route>
+        <Route path="/apidemo" element={<Apidemo/>}></Route>
         <Route path="/*" element={<ErrorNotFound />} />
       </Routes>
     </div>
