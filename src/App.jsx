@@ -37,6 +37,8 @@ import { ValidationForm } from './components/forms/ValidationForm.jsx';
 import Apidemo from "./components/Apis/Apidemo";
 import Apitable from "./components/Apis/Apitable";
 import Apicall from "./components/Apis/Apicall";
+import  ApiDemo2 from './components/Apis/ApiDemo2.jsx';
+import ApiDetail from './components/Apis/ApiDetail.jsx';
 
 
 
@@ -71,6 +73,8 @@ function App() {
         <Route path="/apidemo" element={<Apidemo/>}></Route>
          <Route path="/apitable" element={<Apitable/>}></Route>
          <Route path="/apicall" element={<Apicall/>}></Route>
+          <Route path="/ApiDempo2" element={<ApiDemo2/>}></Route>
+          <Route path="/ApiDetail" element={<ApiDetail/>}></Route>
         <Route path="/*" element={<ErrorNotFound />} />
       </Routes>
     </div>
