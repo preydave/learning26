@@ -35,6 +35,10 @@ import { Journalist } from './components/forms/Journalist.jsx';
 import { FormDemo3 } from './components/forms/FormDemo3.jsx';
 import { ValidationForm } from './components/forms/ValidationForm.jsx';
 import Apidemo from "./components/Apis/Apidemo";
+import Apitable from "./components/Apis/Apitable";
+import Apicall from "./components/Apis/Apicall";
+
+
 
 function App() {
   return (
@@ -65,6 +69,8 @@ function App() {
         <Route path="/formdemo3" element={<FormDemo3/>}></Route>
         <Route path="/ValidationForm" element={<ValidationForm/>}></Route>
         <Route path="/apidemo" element={<Apidemo/>}></Route>
+         <Route path="/apitable" element={<Apitable/>}></Route>
+         <Route path="/apicall" element={<Apicall/>}></Route>
         <Route path="/*" element={<ErrorNotFound />} />
       </Routes>
     </div>
